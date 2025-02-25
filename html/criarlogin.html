@@ -5,43 +5,70 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Unioste RU</title>
-    <link rel="stylesheet" href="./stylecriarlogin.css">
+    <link rel="stylesheet" href="./stylelogin.css">
 </head>
 
 <body>
    
 
- 
+    <div class="texto-topo"> 
+        <img  src="./logomarrom.svg" class="minhaimagem" >
+        <p>Crie sua conta no EasyFicha</p>
+    </div>
 
     <div class="login-panel">
         <div class="Login-text">
-            <h1>Criar Login</h1>
-            <p>Crie seu login no Ficha Fácil</p>
+            <h1>Cadastre-se</h1>
+            <p>Entre com suas informações</p>
         </div>
 
         <form action="dashboard.html" method="post">
             <div class="input-container">
+                
                 <label for="ra">Registro Acadêmico (RA)</label>
                 <img src="./img/user.png" alt="Ícone de usuário">
                 <input type="text" id="ra" placeholder="Digite seu RA" required>
-
             </div>
             <div class="input-container">
-                <label for="ra">Email</label>
-                <img src="./img/user.png" alt="Ícone de usuário">
-                <input type="text" id="ra" placeholder="Digite seu email" required>
                 
+                <label for="nome">Nome</label>
+                <img src="./img/user.png" alt="Ícone de usuário">
+                <input type="text" id="nome" placeholder="Digite seu Nome" required>
+            </div>
+            <div class="input-container">
+                
+                <label for="curso">Curso</label>
+                <img src="./img/curso1.png" alt="Ícone de usuário">
+                <input type="text" id="ra" placeholder="Digite seu Curso" required>
+            </div>
+            <div class="input-container">
+                <label for="email">Email</label>
+                <img src="./img/mail.png" alt="Ícone de chave">
+                <input type="password" id="password" placeholder="Digite sua Email" required>
             </div>
             <div class="input-container">
                 <label for="password">Senha</label>
                 <img src="./img/lock.png" alt="Ícone de chave">
                 <input type="password" id="password" placeholder="Digite sua senha" required>
             </div>
-            <button type="submit">Criar Conta</button>
+            <div class="input-container">
+                <label for="password">Senha</label>
+                <img src="./img/lock.png" alt="Ícone de chave">
+                <input type="password" id="password" placeholder="Digite sua senha" required>
+            </div>
+            <button type="submit">Cadastre-se</button>
         </form>
-        <p class="redirect">Já possui uma conta? <a href="Login.html"> Faça login</a></p>
-
+        
+        
     </div>
+    <aside id="aside-container">
+        <div class="ru.img">
+            <img src="./RU2.png" alt="RU" height="900vh" width="900vw"
+        
+        
+            </div>
+    </aside>
+   
     <div class="logo">
         <img src="./logo.jpg" alt="logo" height="100">
     </div>

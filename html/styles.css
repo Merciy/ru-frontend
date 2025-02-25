@@ -6,75 +6,90 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: linear-gradient(135deg, #f5f0ff, #e0d4ff);
-}
+    background: linear-gradient(120deg, rgba(255, 255, 255, 1), #84858443);
+  }
 
 .container {
-    background: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 1200px;
+    scale: 0.8;
+   
+}
+
+.section, .delete-account {
+    background-color: #FFFFFF; /* Branco */
     padding: 20px;
-    width: 350px;
-    text-align: center;
-}
-
-h1 {
-    color: #4b0082;
-    font-size: 1.8rem;
+    border-radius: 10px;
     margin-bottom: 20px;
+    border: 2px solid #A75B33; /* Borda Marrom Claro */
 }
 
-.input-container {
-    position: relative;
-    margin-bottom: 15px;
+h2 {
+    margin-top: 0;
+    color: #000000; /* Verde Musgo */
 }
 
-.input-container img {
-    position: absolute;
-    top: 50%;
-    left: 10px;
-    transform: translateY(-50%);
-    width: 20px;
-    height: 20px;
+p {
+    color: #8c8c8c;
+          text-align: left;
+          margin-top: 5px;
 }
 
-.input-container input {
-    width: 100%;
-    padding: 10px 10px 10px 40px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 1rem;
+label {
+    display: block;
+    text-align: left; /* Alinha o texto à esquerda */
+    margin-bottom: 0;/* Espaço entre o label e o input */
+    margin-top: 5px;
+    font-weight: bold;/* Ajuste o tamanho do texto */
+    color: #555;
 }
 
-button {
+input {
+    width: 90%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+}
+
+.btn {
     width: 100%;
     padding: 10px;
-    background-color: #4b0082;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-button:hover {
-    background-color: #360061;
-}
-
-.redirect {
-    font-size: 0.9rem;
-    color: #555;
     margin-top: 15px;
-    text-align: center;
+    border: none;
+    border-radius: 5px;
+    background-color: #A75B33; /* Marrom Claro */
+    color: #FFFFFF; /* Branco */
+    font-weight: bold;
+    cursor: pointer;
 }
 
-.redirect a {
-    color: #4b0082;
-    text-decoration: none;
-    transition: color 0.3s;
+.btn:hover {
+    background-color: #8b4726; /* Tom mais escuro do Marrom Claro */
 }
 
-.redirect a:hover {
-    color: #360061;
+/* Seção de Deletar Conta */
+.delete-account h2 {
+    color: #000000; /* Verde Musgo */
+    margin-top: 0;
+}
+
+.delete-account p {
+    color: #8c8c8c;
+          text-align: left;
+          margin-top: 5px;
+}
+
+.delete-btn {
+    background-color: #fe3333; /* Laranja Suave */
+    color: #FFFFFF; /* Branco */
+    border: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.delete-btn:hover {
+    background-color: #f10d0d55; /* Tom mais escuro de laranja */
 }

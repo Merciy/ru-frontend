@@ -6,7 +6,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background: linear-gradient(120deg, rgba(255, 255, 255, 1), #a014f757);
+  background: linear-gradient(120deg, rgba(255, 255, 255, 1), #84858443);
 }
 .navbar {
     position: fixed;
