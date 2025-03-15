@@ -1,42 +1,82 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Visao Geral</title>
-    <link rel="stylesheet" href="./stylegeral.css">
+    <title>EasyFicha - Dashboard</title>
+    <link rel="stylesheet" href="styledash.css">
 </head>
-
 <body>
-    <H1>Visao Geral</H1>
-    <div class="navbar">
+    <div class="container">
+        <header>
+            <div class="header-left">
+                <img src="./img/EasyFichaLOGO-3.svg" alt="Logo EasyFicha" class="logo">
+                <div class="title">
+                    <h4>Sua ficha do RU em um clique! </h4>
+                </div>
+            </div>
+        </header>
         
-        <button class="visao geral"onclick="alert('Você já está na página Dashboard!')" ">Geral</button>
-        <div class="button-div" onclick="window.location.href='user.html'">
-            
-            <img src="img/user.png" alt="Icon">
-            
-            
-          </div>
-          <div class="navbar-text">
-            <p>Olá, User </p>
-            
+        <section class="profile">
+            <div class="card large">
+                <div class="user-info">
+                    <img src="./img/user.png" alt="Avatar" class="avatar">
+                    <div class="details">
+                        <h2>Matheus Santos Lopes</h2>
+                        <p>RA: 98123456</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="tickets">
+            <div class="card large">
+                <div class="ticket-info">
+                    <div class="header">
+                        <h3>Available Tickets</h3>
+                        <span class="status active">Active</span>
+                    </div>
+                    <h1 class="ticket-number">18 <span class="tickets">tickets</span></h1>
+                    <p>Last purchase: 2024-02-20</p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="purchase">
+            <div class="card large">
+                <h3>Purchase Tickets</h3>
+                <div class="purchase-options">
+                    <select>
+                        <option>1</option>
+                        <option>5</option>
+                        <option>10</option>
+                        <option selected>18</option>
+                        <option>20</option>
+                    </select>
+                    <button id="openModal">Purchase Tickets</button>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div class="logo-uni">
+        <img src="./logo.jpg" alt="logo" height="45">
+    </div>
+
+    <!-- Modal de Pagamento -->
+    <div id="paymentModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Select Payment Method</h2>
+            <div class="payment-options">
+                <label><input type="radio" name="payment" value="credit"> Credit Card</label>
+                <label><input type="radio" name="payment" value="debit"> Debit Card</label>
+                <label><input type="radio" name="payment" value="pix" checked> PIX</label>
+            </div>
+            <button class="confirm-btn">Confirm Payment Method</button>
         </div>
-          
-    
     </div>
 
-    
-    
-    
-    
-    
-    
-    <div class="logo">
-
-        <img src="./logo.jpg" alt="logo" height="100">
-
-
-    </div>
+    <script src="script.js"></script>
 </body>
 </html>

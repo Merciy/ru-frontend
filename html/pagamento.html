@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Modal</title>
+    <link rel="stylesheet" href="payment-modal.css">
+</head>
+<body>
+
+    <div class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Select Payment Method</h2>
+            <div class="payment-options">
+                <label><input type="radio" name="payment" value="credit"> Credit Card</label>
+                <label><input type="radio" name="payment" value="debit"> Debit Card</label>
+                <label><input type="radio" name="payment" value="pix" checked> PIX</label>
+            </div>
+            <button class="confirm-btn">Confirm Payment Method</button>
+        </div>
+    </div>
+
+</body>
+</html>
